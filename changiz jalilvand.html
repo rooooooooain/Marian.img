@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>معرفی بازیگر</title>
+    <style>
+        body {
+            font-family: Urdu Typesetting;
+            direction: rtl;
+            text-align: right;
+			font-size: 25px;
+            margin: 0;
+            padding: 0;
+			background:#121422;
+        }
+        .container {
+            display: flex;
+            max-width: 1200px;
+            margin: 20px auto;
+            background-color: #637770;
+			color:  #303B44
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .image {
+            flex: 1;
+            background-color:  #637770;
+        }
+        .image img {
+            width: 100%;
+            height: auto;
+        }
+        .details {
+            flex: 2;
+            padding: 20px;
+            border-left: 1px solid #466256;
+			background-color:  #32443A;
+			color: #84ABAC;
+        }
+        .details h2 {
+            margin-top: 0;
+        }
+        .details p {
+            margin: 5px 0;
+			color:  #84ABAC;
+        }
+        .bio {
+            margin-top: 20px;
+        }
+        .bio h3 {
+            cursor: pointer;
+            color:  #303B44;
+        }
+        .bio-content {
+            display: none;
+            padding: 10px;
+            background-color:  #466256;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+		.rating {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+		}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="image">
+            <img style="margin-top: 100px;" src="https://github.com/rooooooooain/Marian.img/raw/refs/heads/main/images.webp" alt="عکس بازیگر">
+        </div>
+        <div class="details">
+            <h1>چنگیز جلیلوند</h1>
+			<div class="rating">
+            <p><strong>سال تولد:</strong> 	6  آبان1319   </p>
+				<p style="margin-left:190px"><strong>زاده:</strong> 	شیراز، فارس، ایران   </p>
+			</div>
+			<div class="rating">
+            <p><strong>سال فوت:</strong> 2 آذر 1399</p>
+				<p style="margin-left:230px"><strong>علت:</strong> 	ابتلا به کرونا   </p>
+				</div>
+            <!--<p><strong>همسران:</strong> همسر اول، همسر دوم</p>-->
+            <p><strong>فرزندان:</strong> 3</p>
+            <p><strong>پیشه:</strong> گوینده، مدیر دوبلاژ، و هنرپیشه</p>
+      
+        </div>
+    </div>
+    <div class="container bio">
+        <h3 onclick="toggleBio()">زندگی‌نامه</h3>
+        <div class="bio-content" id="bioContent">
+            <p style="color:  #A5C1C2;">چنگیز جلیلوند در ۶ آبان ۱۳۱۹ در شیراز زاده شد. او کار هنر خود را در سال ۱۳۳۶ و با تئاتر به همراه ابوالحسن تهامی آغاز کرد.
+
+چنگیز جلیلوند پس از انقلاب ۱۳۵۷ به مدت بیست سال در ایالات متحده آمریکا زندگی کرد و پس از آن به ایران بازگشت و کار دوبله را از سال ۱۳۷۷ سر گرفت. وی در چند مجموعهٔ تلویزیونی و فیلم سینمایی نیز بازی کرده‌است.
+
+صدای جلیلوند قابلیت گویندگی به جای شخصیت‌های نقش اول با صلابت و تأثیرگذار سینمایی را فراهم کرده بود. او در گویندگی‌هایش قابلیت تیپ‌سازی را داشت و می‌توانست صداهای گوناگونی به وجود آورد. چنگیز جلیلوند در میان دوبلورها به «مرد حنجره‌طلایی» و «آقای دوبله ایران» شناخته می‌شد.
+
+وی از معدود دوبلرانی بود که در تیپ‌سازی‌هایش می‌توانست با ۳ صدای باس، باریتون و تنور نقش بگوید.[نیازمند منبع]
+
+از چنگیز جلیلوند در سال ۱۳۵۷ به عنوان یک دوبلور نمونهٔ جهانی نام برده شد. او به جای بازیگران سرشناس خارجی و داخلی بسیاری گویندگی کرده‌است. وی با تیپ‌سازی خلاقانهٔ خود گویندهٔ اصلی نقش‌های مارلون براندو بود.</p>
+        </div>
+    </div>
+
+	<div class="container bio">
+    <h3 onclick="toggleAchievements()">موفقیت‌ها</h3>
+    <div class="bio-content" id="achievementsContent">
+        <p style="color:  #A5C1C2;">پرآوازه‌ترین گویندگی‌های جلیلوند در فیلم‌های سینمایی خارجی به‌جای مارلون براندو، رابرت دنیرو، سلمان خان، پل نیومن، برت لنکستر، ماکسیمیلیان شل، ریچارد برتون، پیتر اوتول، یول براینر، کلینت ایستوود، دین مارتین، سیلوستر استالونه، لیام نیسون، کنت برانا، رابرت داونی جونیور و در فیلم‌های سینمایی ایرانی به‌جای محمدعلی فردین، بهروز وثوقی، ناصر ملک مطیعی، ایرج قادری، سعید راد بودند.</p>
+    </div>
+</div>
+	
+	
+    <script>
+		
+		function toggleAchievements() {
+    var achievementsContent = document.getElementById('achievementsContent');
+    if (achievementsContent.style.display === 'none' || achievementsContent.style.display === '') {
+        achievementsContent.style.display = 'block';
+    } else {
+        achievementsContent.style.display = 'none';
+    }
+}
+		
+		
+        function toggleBio() {
+            var bioContent = document.getElementById('bioContent');
+            if (bioContent.style.display === 'none' || bioContent.style.display === '') {
+                bioContent.style.display = 'block';
+            } else {
+                bioContent.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>

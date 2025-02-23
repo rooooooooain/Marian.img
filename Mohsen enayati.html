@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>معرفی بازیگر</title>
+    <style>
+        body {
+            font-family: Urdu Typesetting;
+            direction: rtl;
+            text-align: right;
+			font-size: 25px;
+            margin: 0;
+            padding: 0;
+			background:#121422;
+        }
+        .container {
+            display: flex;
+            max-width: 1200px;
+            margin: 20px auto;
+            background-color: #637770;
+			color:  #303B44
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .image {
+            flex: 1;
+            background-color:  #637770;
+        }
+        .image img {
+            width: 100%;
+            height: auto;
+        }
+        .details {
+            flex: 2;
+            padding: 20px;
+            border-left: 1px solid #466256;
+			background-color:  #32443A;
+			color: #84ABAC;
+        }
+        .details h2 {
+            margin-top: 0;
+        }
+        .details p {
+            margin: 5px 0;
+			color:  #84ABAC;
+        }
+        .bio {
+            margin-top: 20px;
+        }
+        .bio h3 {
+            cursor: pointer;
+            color:  #303B44;
+        }
+        .bio-content {
+            display: none;
+            padding: 10px;
+            background-color:  #466256;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="image">
+            <img style="margin-top: 10px;" src="https://github.com/rooooooooain/Marian.img/raw/refs/heads/main/961264_798.jpg" alt="عکس بازیگر">
+        </div>
+        <div class="details">
+            <h1>محسن عنایتی نوش آبادی</h1>
+            
+        </div>
+    </div>
+    <div class="container bio">
+        <h3 onclick="toggleBio()">زندگی‌نامه</h3>
+        <div class="bio-content" id="bioContent">
+            <p style="color:  #A5C1C2;">چیزی در این مورد در دسترس نیست!.</p>
+        </div>
+    </div>
+
+	<div class="container bio">
+    <h3 onclick="toggleAchievements()">موفقیت‌ها</h3>
+    <div class="bio-content" id="achievementsContent">
+        <p>پویانمایی سینمایی «بنیامین» به کارگردانی او، از جمله آثار حاضر در بخش «انیمیشن» سی‌و‌هفتمین جشنواره فیلم فجر حضور دارد. این اثر، در سال گذشته، توانست عنوان دومین انیمیشن سینمایی پرفروش‌ تاریخ سینمای ایران را از آن خود کند..</p>
+    </div>
+</div>
+	
+	
+    <script>
+		
+		function toggleAchievements() {
+    var achievementsContent = document.getElementById('achievementsContent');
+    if (achievementsContent.style.display === 'none' || achievementsContent.style.display === '') {
+        achievementsContent.style.display = 'block';
+    } else {
+        achievementsContent.style.display = 'none';
+    }
+}
+		
+		
+        function toggleBio() {
+            var bioContent = document.getElementById('bioContent');
+            if (bioContent.style.display === 'none' || bioContent.style.display === '') {
+                bioContent.style.display = 'block';
+            } else {
+                bioContent.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
